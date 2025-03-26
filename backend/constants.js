@@ -1,9 +1,11 @@
-const PORT = process.env.PORT || 3000;
-const DB_USER= process.env.DB_USER || "ez_user"
-const DB_PASSWORD= process.env.DB_PASSWORD || "12345678"
-const DB_NAME= process.env.DB_NAME || "workwise_train_booking_project"
-const DB_HOST= process.env.DB_HOST || "127.0.0.1"
-const DIALECT= "postgres"
-const JWT_SECRET = process.env.JWT_SECRET || 'ticket_booking_secret';
+require('dotenv').config();
 
-module.exports = { PORT, DB_USER, DB_PASSWORD, DB_NAME, DB_HOST, JWT_SECRET, DIALECT }
+const PORT = process.env.PORT;
+const DB_USER = process.env.DB_USER;
+const DB_PASSWORD = process.env.DB_PASSWORD;
+const DB_NAME = process.env.DB_NAME;
+const DB_HOST = process.env.DB_HOST;
+const DIALECT = "postgres";
+const JWT_SECRET = process.env.JWT_SECRET;
+
+module.exports = { PORT, DB_USER, DB_PASSWORD, DB_NAME, DB_HOST, JWT_SECRET, DIALECT };
