@@ -1,5 +1,5 @@
 const express = require('express');
-const { Reservation, Seat } = require('../config/models');
+const { Reservation, Seat } = require('../models');
 const { selectSeats } = require('../utils/seatSelector');
 const router = express.Router();
 

@@ -2,7 +2,7 @@ const express = require('express');
 const cors = require("cors");
 
 const app = express();
-const { sequelize, Seat } = require('./config/models');
+const { sequelize, Seat } = require('./models');
 const authRoutes = require('./routes/auth');
 const reservationRoutes = require('./routes/reservation');
 const seatRoutes = require('./routes/seats');

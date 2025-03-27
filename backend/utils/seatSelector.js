@@ -1,4 +1,4 @@
-const { Seat, sequelize } = require('../config/models');
+const { Seat, sequelize } = require('../models');
 
 async function selectSeats(numSeats) {
   if (numSeats < 1 || numSeats > 7) {
